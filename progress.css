@@ -1,0 +1,148 @@
+body{
+margin:0;
+background: linear-gradient(135deg, #0D6D77, #1B7F8A, #83C5BE);
+background-size:cover;
+}
+
+/* HEADER STYLE (same as notes) */
+
+.logo{
+position:absolute;
+left:30px;
+top:20px;
+width:320px;
+}
+
+.title{
+text-align:center;
+color:#ffffff;
+font-size:60px;
+text-shadow:2px 2px 10px rgba(0,0,0,0.4);
+margin-top:30px;
+}
+
+/* STUDENT NAME */
+
+.student{
+width:60%;
+margin:30px auto;
+font-size:22px;
+color:#fff;
+text-align:center;
+}
+/* NAVBAR */
+.navbar{
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border:1px solid var(--border);
+top:0;
+left:0;
+background: rgba(1, 55, 61, 0.93);
+backdrop-filter: blur(16px);
+border-bottom: 1px solid rgba(3, 78, 90, 0.2);
+box-shadow: 0 6px 20px rgba(4, 51, 58, 0.778);
+animation:slideDown .5s ease;
+}
+
+@keyframes slideDown{
+from{opacity:0;transform:translateY(-15px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.logo-section h2{
+font-size:30px;
+background: linear-gradient(45deg, #fdffff, #1891a6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+.nav-links a{
+color:white;
+text-decoration: none;
+transition:.3s;
+font-size:18px;
+font-weight:500;
+/* it gets a little bit of a lift when hovered over, and the color changes to yellowgreen for a fresh and vibrant look. This adds an interactive and engaging element to the navigation experience, making it more visually appealing and user-friendly. */
+transform:translateY(-2px);
+}
+
+.nav-links a:hover{
+transform:translateY(2px);
+color:yellowgreen;
+}
+.profile img{
+width:45px;
+height:45px;
+border-radius:50%;
+border:2px solid var(--cyan);
+transition:.3s;
+}
+
+.profile img:hover{
+transform:scale(1.08);
+}
+
+/* TABLE CONTAINER (like notes card) */
+
+.marks-table{
+width:60%;
+margin:30px auto;
+
+background: linear-gradient(145deg, #ffffff, #f3f7f7);
+
+border-radius:18px;
+
+padding:20px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.25);
+
+border-collapse:collapse;
+overflow:hidden;
+}
+
+/* TABLE HEAD */
+
+.marks-table th{
+background: linear-gradient(135deg, #0D6D77, #1B7F8A);
+color:white;
+padding:12px;
+font-size:18px;
+}
+
+/* TABLE DATA */
+
+.marks-table td{
+padding:12px;
+text-align:center;
+font-size:18px;
+color:#180707;
+}
+
+/* ROW STYLE */
+
+.marks-table tr{
+transition:0.3s;
+}
+
+/* HOVER EFFECT (same feel as subject cards) */
+
+.marks-table tr:hover{
+background: linear-gradient(135deg, #E0F0F0, #68e9cf);
+transform:scale(1.01);
+}
+
+/* BORDERS */
+
+.marks-table th,
+.marks-table td{
+border-bottom:1px solid #ddd;
+}

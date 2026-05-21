@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+
+<script>
+function checkLogin() {
+
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if(username === "admin" && email === "admin@gmail.com" && password === "12345"){
+        alert("Login Successful");
+        window.location.href = "home.html";
+    } 
+    else {
+        alert("Invalid Login");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Login</h2>
+
+Username:<br>
+<input type="text" id="username"><br><br>
+
+Email:<br>
+<input type="text" id="email"><br><br>
+
+Password:<br>
+<input type="password" id="password"><br><br>
+
+<button onclick="checkLogin()">Login</button>
+
+</body>
+</html>

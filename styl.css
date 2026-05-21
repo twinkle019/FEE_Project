@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('log.jpg');
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-container{
+    width:400px;
+    background:#ffffff;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+h1{
+    background: linear-gradient(45deg, #2b949f, #2e314c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:36px;
+}
+h2{
+    margin-bottom:25px;
+    color:#0D6D77;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+label{
+    margin-top:10px;
+    margin-bottom:5px;
+    color:#2B2D42;
+    font-size:14px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    background:#EDF6F9;
+    transition:0.3s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#0D6D77;
+    box-shadow:0 0 5px rgba(13,109,119,0.3);
+}
+
+button{
+    margin-top:20px;
+    padding:12px;
+    background:#0D6D77;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0a525a;
+}
+
+.forgot{
+    margin-top:15px;
+    color:#0D6D77;
+    text-align:center;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.forgot:hover{
+    text-decoration:underline;
+}

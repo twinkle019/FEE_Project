@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gradify - Profile</title>
+
+<link rel="stylesheet" href="profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo-box">
+
+        <img src="logo.png" class="logo">
+
+        <h2>Gradify</h2>
+
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Attendance</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Progress</a></li>
+
+    </ul>
+
+</header>
+
+
+<!-- PROFILE SECTION -->
+
+<section class="profile-section">
+
+    <!-- PROFILE CARD -->
+
+    <div class="profile-box">
+
+        <!-- PROFILE IMAGE -->
+
+        <div class="profile-image-box">
+
+            <img 
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            class="profile-img"
+            id="profilePreview"
+            >
+
+        </div>
+
+        <!-- IMAGE INPUT -->
+
+        <input 
+        type="file"
+        id="profileUpload"
+        accept="image/*"
+        hidden
+        >
+
+        <!-- CHANGE BUTTON -->
+
+        <button 
+        class="upload-btn"
+        onclick="document.getElementById('profileUpload').click()"
+        >
+        Change Photo
+        </button>
+
+        <!-- USER INFO -->
+
+        <div class="profile-info">
+
+            <h1>
+            Welcome,
+            <span id="name">Student</span> 👋
+            </h1>
+
+            <p>
+            Edit and manage your profile details easily using Gradify dashboard.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- DETAILS -->
+
+    <div class="container">
+
+        <div class="card-container">
+
+            <div class="card">
+
+                <label>📧 Email</label>
+
+                <input type="email" id="email">
+
+            </div>
+
+            <div class="card">
+
+                <label>📱 Phone</label>
+
+                <input type="text" id="phone">
+
+            </div>
+
+            <div class="card">
+
+                <label>📍 Address</label>
+
+                <input type="text" id="address">
+
+            </div>
+
+            <div class="card">
+
+                <label>👨 Father Name</label>
+
+                <input type="text" id="father">
+
+            </div>
+
+            <div class="card">
+
+                <label>👩 Mother Name</label>
+
+                <input type="text" id="mother">
+
+            </div>
+
+            <div class="card">
+
+                <label>🎂 Date of Birth</label>
+
+                <input type="date" id="dob">
+
+            </div>
+
+            <div class="card">
+
+                <label>🩸 Blood Group</label>
+
+                <input type="text" id="blood">
+
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="button-box">
+
+            <button class="save-btn">
+            Save Changes
+            </button>
+
+            <button class="logout-btn" onclick="logout()">
+            Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- IMAGE PREVIEW SCRIPT -->
+
+<script>
+
+const upload = document.getElementById("profileUpload");
+
+const preview = document.getElementById("profilePreview");
+
+upload.addEventListener("change", function(){
+
+    const file = this.files[0];
+
+    if(file){
+
+        preview.src = URL.createObjectURL(file);
+
+    }
+
+});
+
+function logout(){
+
+    alert("Logged Out Successfully");
+
+}
+
+</script>
+
+</body>
+
+</html>

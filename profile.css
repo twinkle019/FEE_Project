@@ -1,0 +1,174 @@
+body{
+background: linear-gradient(135deg, #0D6D77, #1B7F8A, #83C5BE);
+font-family: Arial;
+margin:0;
+}
+
+/* MAIN */
+
+.main{
+width:1000px;
+margin:auto;
+padding:40px;
+}
+
+/* LOGO */
+
+.logo{
+position:absolute;
+left:30px;
+width:400px;
+}
+
+/* TITLE */
+
+.title{
+text-align:center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:70px;
+font-weight:bold;
+color:#ffffff;
+margin-bottom:30px;
+text-shadow:2px 2px 10px rgba(0,0,0,0.4);
+}
+
+/* PROFILE BOX */
+
+.profile-box{
+background: linear-gradient(145deg, #ffffff, #f3f7f7);
+padding:40px;
+border-radius:14px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.25);
+width:600px;
+margin:auto;
+}
+
+/* HEADINGS */
+
+.profile-box h2{
+text-align:center;
+color:#0D6D77;
+margin-bottom:20px;
+}
+
+/* INNER DETAILS */
+
+.profile-box p{
+background: linear-gradient(145deg, #F0F7F7, #E6F2F2);
+padding:12px;
+border-radius:8px;
+margin:10px 0;
+font-size:16px;
+color:#1E1E1E;
+border:1px solid #DCECEC;
+transition:0.3s;
+}
+
+/* LABEL */
+
+.profile-box b{
+color:#0D6D77;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:14px;
+margin-top:20px;
+background: linear-gradient(135deg, #0D6D77, #1B7F8A);
+color:white;
+font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background: linear-gradient(135deg, #0a525a, #146b73);
+transform:scale(1.02);
+}
+
+/* HOVER ON DETAILS */
+
+.profile-box p:hover{
+background: linear-gradient(135deg, #E0F0F0, #FFD6A5);
+transform:scale(1.02);
+}
+
+/* TEXT */
+
+.welcome-text{
+text-align:center;
+color:#ffffff;
+margin-bottom:5px;
+}
+
+.user-name{
+text-align:center;
+color:#ffffff;
+font-size:32px;
+margin-bottom:20px;
+}
+
+/* PROFILE LIST */
+
+.profile-list{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+margin-top:20px;
+}
+
+/* CARD */
+
+.card{
+width:90%;
+background: linear-gradient(145deg, #F0F7F7, #E6F2F2);
+padding:15px 25px;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#1E1E1E;
+box-shadow:0px 5px 12px rgba(0,0,0,0.15);
+border:1px solid #DCECEC;
+transition:0.3s;
+}
+
+/* CARD HOVER */
+
+.card:hover{
+background: linear-gradient(135deg, #E0F0F0, #FFD6A5);
+transform:scale(1.03);
+box-shadow:0px 10px 20px rgba(0,0,0,0.25);
+}
+
+/* CONTAINER */
+
+.container{
+background: linear-gradient(145deg, #ffffff, #f3f7f7);
+padding:40px;
+border-radius:14px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.25);
+width:600px;
+margin:auto;
+}
+.welcome-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.profile-pic{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid teal;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}

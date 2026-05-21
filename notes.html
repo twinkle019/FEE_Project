@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gradify - Notes</title>
+<link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo-section">
+        <h2>Gradify</h2>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="homeo.html">Home</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="attendanceo.html">Attendance</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="planner.html">Planner</a></li>
+        </ul>
+    </nav>
+
+    <div class="profile">
+        <a href="profile.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        </a>
+    </div>
+
+</header>
+
+
+
+<div class="header">
+
+<h1 class="title">NOTES</h1>
+
+</div>
+
+<div class="notes-container">
+    <div class="subject" onclick="openNote('fee.pdf')">FEE</div>
+<div class="subject" onclick="openNote('fcp.pdf')">FCP</div>
+<div class="subject" onclick="openNote('os.pdf')">OS</div>
+<div class="subject" onclick="openNote('dm.pdf')">DM</div>
+<div class="subject" onclick="openNote('faa.pdf')">FAA</div>
+
+
+</div>
+
+
+<div class="notes-content">
+
+<div class="note" id="fcp">
+<h2>FCP Notes</h2>
+<p>Algorithms, Flowcharts, Programming Basics.</p>
+<a href="pdf/fcp.pdf">Download PDF</a>
+</div>
+
+<div class="note" id="fee">
+<h2>FEE Notes</h2>
+<p>Circuits, Ohm's Law, Electrical basics.</p>
+<a href="pdf/fee.pdf">Download PDF</a>
+</div>
+
+<div class="note" id="os">
+<h2>Operating System</h2>
+<p>Processes, Scheduling, Memory management.</p>
+<a href="pdf/os.pdf">Download PDF</a>
+</div>
+
+<div class="note" id="dm">
+<h2>Discrete Mathematics</h2>
+<p>Sets, Graphs, Relations.</p>
+<a href="pdf/dm.pdf">Download PDF</a>
+</div>
+
+<div class="note" id="faa">
+<h2>FAA</h2>
+<p>Algorithm complexity, Big-O notation.</p>
+<a href="pdf/faa.pdf">Download PDF</a>
+</div>
+
+</div>
+
+<script src="notesScrpt.js"></script>
+
+</body>
+</html>

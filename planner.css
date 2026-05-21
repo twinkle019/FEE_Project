@@ -1,0 +1,217 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:url("bg.jpg");
+    background-size:cover;
+}
+
+/* NAVBAR */
+.navbar{
+    text-align:center;
+    background:#0D6D77;
+    color:#EDF6F9;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#0D6D77;
+    margin-top:20px;
+}
+
+/* MAIN */
+.planner-container{
+    width:1000px;
+    margin:40px auto;
+    display:flex;
+    gap:30px;
+}
+
+/* CALENDAR */
+.calendar{
+    flex:1;
+    background:#EDF6F9;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.calendar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.calendar-header button{
+    background:#0D6D77;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* WEEKDAYS */
+.weekdays{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    text-align:center;
+    margin-bottom:10px;
+    font-weight:bold;
+    color:#0D6D77;
+}
+
+.weekdays div{
+    padding:10px 0;
+    background:#cde9e5;
+    border-radius:5px;
+}
+
+/* DAYS */
+.days{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:8px;
+}
+
+.day{
+    padding:15px 10px;
+    background:#83C5BE;
+    text-align:center;
+    border-radius:6px;
+    cursor:pointer;
+    position:relative;
+    font-weight:bold;
+}
+
+.day:hover{
+    background:#0D6D77;
+    color:white;
+}
+
+/* SELECTED DATE */
+.selected{
+    background:teal;
+    color:white;
+}
+
+/* TODAY */
+.today{
+    border:2px solid rgb(6, 76, 89);
+    font-weight:bold;
+}
+
+/* DOT */
+.dot{
+    width:6px;
+    height:6px;
+    background:#0D6D77;
+    border-radius:50%;
+    position:absolute;
+    bottom:4px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* TASK PANEL */
+.task-panel{
+    flex:1;
+    background:#EDF6F9;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.task-panel input{
+    width:70%;
+    padding:8px;
+}
+
+.task-panel button{
+    padding:8px;
+    background:#0D6D77;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.task-panel ul{
+    list-style:none;
+    padding:0;
+    margin-top:15px;
+}
+
+.task-panel li{
+    background:white;
+    padding:8px;
+    margin-bottom:8px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+/* NAVBAR */
+.navbar{
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border:1px solid var(--border);
+top:0;
+left:0;
+background: rgba(1, 55, 61, 0.93);
+backdrop-filter: blur(16px);
+border-bottom: 1px solid rgba(3, 78, 90, 0.2);
+box-shadow: 0 6px 20px rgba(4, 51, 58, 0.778);
+animation:slideDown .5s ease;
+}
+
+@keyframes slideDown{
+from{opacity:0;transform:translateY(-15px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.logo-section h2{
+font-size:30px;
+background: linear-gradient(45deg, #fdffff, #1891a6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+.nav-links a{
+color:white;
+text-decoration: none;
+transition:.3s;
+font-size:18px;
+font-weight:500;
+/* it gets a little bit of a lift when hovered over, and the color changes to yellowgreen for a fresh and vibrant look. This adds an interactive and engaging element to the navigation experience, making it more visually appealing and user-friendly. */
+transform:translateY(-2px);
+}
+
+.nav-links a:hover{
+transform:translateY(2px);
+color:yellowgreen;
+}
+.profile img{
+width:45px;
+height:45px;
+border-radius:50%;
+border:2px solid var(--cyan);
+transition:.3s;
+}
+
+.profile img:hover{
+transform:scale(1.08);
+}
